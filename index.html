@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="NAME">HI! I'M MARY ANGELDYN MAHILUM BAUTISTA</h1>
+
+    <h2 class="ABOUT">About Me</h2>
+
+    <p class="PARAG">
+        I'm currently a 2nd year BSIT College Student at CENTRAL PHILIPPINE STATE UNIVERSITY SAN CARLOS CAMPUS. I enjoy learning new things and spending time doing the things I love.
+    </p>
+
+
+    <div class="menu">
+
+        <button onclick="showSection('hobbies')">
+            MY HOBBIES
+        </button>
+
+        <button onclick="showSection('faves')">
+            MY FAVES
+        </button>
+
+        <button onclick="showSection('friends')">
+            MY FRIENDS
+        </button>
+
+        <button onclick="showSection('contact')">
+            CONTACT / SOCIAL MEDIA
+        </button>
+
+    </div>
+
+
+    <section id="hobbies" class="content-section">
+
+        <h2>My Hobbies</h2>
+
+        <p>PAINTING</p>
+
+        <div class="image-box">
+            <img src="painting.jpg">
+        </div>
+
+
+        <p>COOKING</p>
+
+        <div class="image-box">
+            <img src="cooking.jpg">
+        </div>
+
+
+        <p>WATCHING SHOWS</p>
+
+        <div class="image-box">
+            <img src="chill.jpg">
+        </div>
+
+
+        <p>SINGING</p>
+
+        <div class="image-box">
+            <img src="singing.jpg">
+        </div>
+
+    </section>
+    
+
+    <section id="faves" class="content-section">
+
+        <h2>My Faves</h2>
+
+        <p>CHICKEN</p>
+
+        <div class="image-box">
+            <img src="chicken.jpg">
+        </div>
+
+
+        <p>GALAXY COLORS</p>
+
+        <div class="image-box">
+            <img src="galaxy.jpg">
+        </div>
+
+
+        <p>STREET FOODS</p>
+
+        <div class="image-box">
+            <img src="streetfoods.jpg">
+        </div>
+
+
+        <p>SWEETS</p>
+
+        <div class="image-box">
+            <img src="sweets.jpg">
+        </div>
+
+    </section>
+
+
+    <section id="friends" class="content-section">
+
+        <h2>My Friends</h2>
+
+        <div class="friends">
+
+            <div class="friend">
+                <img src="gwyneth.jpg">
+            </div>
+
+            <div class="friend">
+                <img src="koy.jpeg">
+            </div>
+
+            <div class="friend">
+                <img src="cha.jpeg">
+            </div>
+
+            <div class="friend">
+                <img src="grace.jpeg">
+            </div>
+
+            <div class="friend">
+                <img src="lorie.jpg">
+            </div>
+
+             <div class="friend">
+                <img src="sarah.jpeg">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="contact" class="content-section">
+
+        <h2>Contact / Social Media</h2>
+
+        <div class="contact-box">
+
+            <p>
+                <b>Facebook:</b>
+                Mary Angeldyn Mahilum Bautista
+            </p>
+
+            <p>
+                <b>Instagram:</b>
+                min_xiiieee
+            </p>
+
+            <p>
+                <b>TikTok:</b>
+                @minx13426
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <div class="quote">
+        <p>"Explore and enjoy my personal website!"</p>
+    </div>
+
+    <script>
+
+        function showSection(sectionId) {
+
+            let sections = document.querySelectorAll(".content-section");
+
+            sections.forEach(function(section) {
+                section.style.display = "none";
+            });
+
+            document.getElementById(sectionId).style.display = "block";
+        }
+
+    </script>
+
+</body>
+</html>
